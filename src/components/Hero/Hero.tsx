@@ -1,14 +1,14 @@
 import { BrowserRouter } from "react-router-dom"
 import { Container } from "./styles"
 import ScrollAnimation from "react-animate-on-scroll"
-import Illustration from "../../assets/hero.png"
+import Illustration from "../../assets/hedev.png"
 import { NavHashLink } from "react-router-hash-link"
 import linkedin from '../../assets/linkedin.svg'
 import githubIcon from '../../assets/github.svg'
 import whatsapp from '../../assets/whatsapp.svg'
 import Hello from '../../assets/Hello.gif'
 import telegram from '../../assets/telegram.svg'
-import { FaFacebookF } from "react-icons/fa6";
+import { FaFacebookF , FaLinkedinIn , FaGithubAlt , FaGoogle } from "react-icons/fa6";
 export function Hero() {
   return (
     <Container id="home">
@@ -23,7 +23,9 @@ export function Hero() {
           <h3>Full Stack Developer</h3>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.6 * 1000}>
-          <p className="small-resume">1+ Years of Experience</p>
+          <p className="small-resume">As an engineer with a year of experience in enterprise software, I am eager to apply my fintech and
+business solutions expertise to drive innovation and efficiency. I aim to tackle complex challenges and
+deliver impactful results while growing within a dynamic team.</p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.8 * 1000}>
           <BrowserRouter>
@@ -36,28 +38,28 @@ export function Hero() {
         target="_blank"
         rel="noreferrer"
       >
-        <FaFacebookF />
+        <FaLinkedinIn />
       </a>
         <a
           href="https://github.com/robinmxr"
           target="_blank"
           rel="noreferrer"
         >
-          <img src={githubIcon} alt="GitHub" />
+          <FaGithubAlt />
         </a>
         <a
           href="https://api.whatsapp.com/send/?phone=%2B919630576848&text=Hello+Vinayak"
           target="_blank"
           rel="noreferrer"
         >
-          <img src={whatsapp} alt="Whatsapp" />
+          <FaFacebookF />
         </a>
         <a
           href="https://t.me/CodeVinayak"
           target="_blank"
           rel="noreferrer"
         >
-          <img src={telegram} alt="telegram" />
+          <FaGoogle />
         </a></div>
         </ScrollAnimation>
       </div>

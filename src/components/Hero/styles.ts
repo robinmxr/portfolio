@@ -25,25 +25,36 @@ export const Container = styled.section`
     }
   }
 // New added
-  .social-media{
-    display: inline-flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    padding-top:5rem;
-    padding-left:1rem;
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* Space between icons */
+  margin-top: 1rem;
+}
 
-    img,span{
-      font-size: 3rem;
-      width: 3.5rem;
-    }
-  }
+.social-media a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f5f5f5; /* Light grey background */
+  color: #3f51b5; /* Primary color for icons */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
 
+.social-media a:hover {
+  background-color: #3f51b5; /* Primary color on hover */
+  color: #fff; /* White color for icons on hover */
+  transform: scale(1.1); /* Slightly enlarge the icon on hover */
+}
 
   .button{
     margin-top: 5rem;
     padding: 1.4rem 6rem;
   }
+
 
   .hero-image{
     img{
